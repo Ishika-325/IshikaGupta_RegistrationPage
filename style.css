@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 30px;
+    min-height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148817572.jpg?ga=GA1.1.1555643979.1731670980&semt=ais_hybrid&w=740') ;
+    background-size: cover;
+
+}
+
+h1{
+    margin: 20px;
+    opacity: 0;
+    transform: translateY(-300%);
+    transition: all 1.5s ease;
+}
+
+h1.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+form{
+    padding: 30px;
+    line-height: 30px;
+    margin: 30px;
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+form > button{
+    padding: 10px;
+    background-color: #FFA500;
+    border-radius: 7px;
+    display: flex;
+    justify-self: center;
+    margin: 20px;
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+label{
+    display: grid;
+    grid-template-columns : 1fr 2fr;
+}
+
+#gender{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.input{
+    padding: 5px;
+    font-size: 18px;
+
+}
+
+.error{
+    font-size: 18px;
+    color: red;
+}
+
+#successMsg{
+    color: rgb(17, 192, 17);
+    text-align: center;
+}
+
+@media (max-width: 650px){
+    body{
+        font-size: 20px;
+    }
+    form{
+        padding: 15px;
+    }
+    .input{
+        padding: 3px;
+    }
+}
+
+@media (max-width : 430px){
+   
+    form{
+        line-height: 20px;
+    }
+
+}
+
+@media (max-width : 360px){
+    h1{
+        margin: 5px;
+    }
+    form{
+        font-size: 16px;
+    }
+    .input{
+        font-size: 16px;
+        padding: 1px;
+    }
+
+}

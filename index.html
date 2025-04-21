@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration page</title>
+</head>
+<body>
+    <h1>📝Register here</h1>
+
+    <form>
+        <div id="form">
+        <div id="name">
+              <label> First Name: 
+                     <input type="text" name="first_name" class="input" placeholder="first name" required>
+               </label>
+               <br>
+                <label> Last Name: 
+                     <input type="text" name="last_name" class="input"  placeholder="last name" required>
+                </label>
+        </div>
+
+        <br>
+
+        <label>Gender:
+            <div id="gender">
+            <div>
+            <input type="radio" class="bullet" name="gender" value="male" required>Male</input>
+            </div>
+            <div>
+            <input type="radio" class="bullet" name="gender" value="female" required>Female</input>
+            </div>
+            </div>
+        </label>
+        
+       
+        <br>
+
+        <label>Qualifications: 
+           <select class="input"  name="qualification" required> 
+                <option value="">-- Select--</option>
+                <option value="high-school">High School Graduate</options>
+                <option value="graduate">Graduate</options>
+                <option value="post-graduate">Post Graduate</options>
+                <option value="other">Other</option>
+            </select>
+       </label>
+
+       <br>
+
+       <label>Email:
+           <input type="email" name="mail" class="input" placeholder="abc@gmail.com" required>
+       </label>
+
+       <br>
+
+       <label>Phone Number:
+            <div>
+            <input type="text" name="num" id="phone" class="input" placeholder="0123456789" required>
+            <div class="error"></div>
+            </div> 
+       </label>
+
+       <br>
+
+       <label>Create Password:
+            <div>
+             <input type="password" name="password" id="password" class="input" placeholder="password" required>
+             <div class="error"></div>
+            </div>
+       </label>
+
+       <br>
+
+       <label>Confirm Password:
+        <div>
+        <input type="password" name="password" id="confirmPassword"  class="input" placeholder="password" required>
+        <div class="error"></div>
+       </div>
+       </label>
+
+      </div>
+
+
+       <button>Submit</button>
+       <div id="successMsg"></div>
+
+        
+    </form>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
